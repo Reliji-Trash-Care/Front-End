@@ -1,0 +1,1 @@
+export { DeteksiAdmin } from "./DeteksiAdmin";

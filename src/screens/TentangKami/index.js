@@ -1,0 +1,2 @@
+export { TentangKami } from "./TentangKami";
+

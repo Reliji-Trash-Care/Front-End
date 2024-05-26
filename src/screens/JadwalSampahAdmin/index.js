@@ -1,0 +1,1 @@
+export { JadwalSampahAdmin } from "./JadwalSampahAdmin";

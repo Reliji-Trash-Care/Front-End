@@ -1,0 +1,1 @@
+export { ListBerita } from "./ListBerita";

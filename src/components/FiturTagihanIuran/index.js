@@ -1,0 +1,1 @@
+export { FiturTagihanIuran } from "./FiturTagihanIuran";

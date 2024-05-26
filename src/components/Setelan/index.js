@@ -1,0 +1,1 @@
+export { Setelan } from "./Setelan";

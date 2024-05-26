@@ -1,0 +1,1 @@
+export { BeritaUser } from "./BeritaUser";

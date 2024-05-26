@@ -1,0 +1,1 @@
+export { InputBerita } from "./InputBerita";

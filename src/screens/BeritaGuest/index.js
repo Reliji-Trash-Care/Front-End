@@ -1,0 +1,1 @@
+export { BeritaGuest } from "./BeritaGuest";

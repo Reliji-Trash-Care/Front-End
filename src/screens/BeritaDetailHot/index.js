@@ -1,0 +1,1 @@
+export { BeritaDetailHot } from "./BeritaDetailHot";

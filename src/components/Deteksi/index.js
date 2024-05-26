@@ -1,0 +1,1 @@
+export { Deteksi } from "./Deteksi";

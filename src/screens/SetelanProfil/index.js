@@ -1,0 +1,1 @@
+export { SetelanProfil } from "./SetelanProfil";

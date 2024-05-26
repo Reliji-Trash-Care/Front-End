@@ -1,0 +1,1 @@
+export { TagihanAdmin } from "./TagihanAdmin";

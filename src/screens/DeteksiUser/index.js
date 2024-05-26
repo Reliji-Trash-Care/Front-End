@@ -1,0 +1,1 @@
+export { DeteksiUser } from "./DeteksiUser";

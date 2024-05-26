@@ -1,0 +1,1 @@
+export { ContainerBerita } from "./ContainerBerita";
