@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { SideBarWrapper } from './components/SideBarWrapper/SideBarWrapper';
 import React from 'react'
 import { LandingPage } from './screens/LandingPage'
 import { TentangKami } from './screens/TentangKami/TentangKami'
@@ -27,6 +28,8 @@ import { DeteksiAdmin } from "./screens/DeteksiAdmin/DeteksiAdmin";
 const App = () => {
   return (
     <Router>
+      <div className="flex">
+        <SideBarWrapper />
     <Routes>
     <Route path='/' element={<LandingPage/>} />
     <Route path='/tentangkami' element={<TentangKami/>} />
@@ -52,6 +55,7 @@ const App = () => {
     <Route path='/chatpengelolaadmin' element={<ChatPengelolaAdmin/>} />
     <Route path='/deteksiadmin' element={<DeteksiAdmin/>} />
     </Routes>
+    </div>
     </Router>
   )
 }

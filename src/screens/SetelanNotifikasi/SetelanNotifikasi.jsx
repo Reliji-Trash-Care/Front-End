@@ -58,8 +58,8 @@ export const SetelanNotifikasi = () => {
         <SideBarWrapper
           chatText="Chat"
           className="!fixed !left-px !top-0"
-          deteksiDeteksi="/img/deteksi-3.svg"
-          logoPlaceholderGroup="/img/group-7-2.png"
+          deteksiDeteksi="../../../static/img/deteksi-3.svg"
+          logoPlaceholderGroup="../../../static/img/group-7-2.png"
           setelanDivClassName="!tracking-[0] !text-[16px] ![font-style:unset] !font-bold ![font-family:'Nunito',Helvetica] !leading-[22.4px]"
           setelanPropertyDefaultClassName="!flex-[0_0_auto] !bg-secondary-1"
           sideBarDivClassName="!text-primary-2 !tracking-[0] !text-[16px] ![font-style:unset] !font-normal ![font-family:'Nunito',Helvetica] !leading-[22.4px]"
@@ -67,8 +67,8 @@ export const SetelanNotifikasi = () => {
         />
         <NavbarUserFitur
           className="!fixed !left-[324px] !top-0"
-          profilArrowDown="/img/arrow-down-2-3.svg"
-          profilOpenartImage="/img/openart-image-nfswrdqc-1711466557108-raw-2-3.png"
+          profilArrowDown="../../../static/img/arrow-down-2-3.svg"
+          profilOpenartImage="../../../static/img/openart-image-nfswrdqc-1711466557108-raw-2-3.png"
           profilText="Admin"
         />
       </div>
