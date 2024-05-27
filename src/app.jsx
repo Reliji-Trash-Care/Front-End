@@ -29,7 +29,7 @@ const App = () => {
   return (
     <Router>
       <div className="flex">
-        <SideBarWrapper />
+        {/* <SideBarWrapper /> */}
     <Routes>
     <Route path='/' element={<LandingPage/>} />
     <Route path='/tentangkami' element={<TentangKami/>} />
