@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "../../components/Button";
 import { NavbarGuest } from "../../components/NavbarGuest";
 import { StateDefaultChangeWrapper } from "../../components/StateDefaultChangeWrapper";
@@ -7,9 +7,6 @@ import { CheckboxFalse } from "../../icons/CheckboxFalse";
 import { EyeOff } from "../../icons/EyeOff";
 
 export const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-primary-1 overflow-hidden w-[1440px] h-[1024px] relative">
@@ -33,8 +30,7 @@ export const Login = () => {
             <div className="flex flex-col w-[486px] items-start gap-[24px] relative flex-[0_0_auto] mr-[-1.99px]">
               <TextField
                 className="!w-[486px]"
-                input={email}
-                onChange={(e) => setEmail(e.target.value)}
+                input=""
                 inputTextClassName="!tracking-[var(--body-1-regular-letter-spacing)] !text-[length:var(--body-1-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-1-regular-font-style)] !font-[number:var(--body-1-regular-font-weight)] !font-body-1-regular !leading-[var(--body-1-regular-line-height)]"
                 label="E-mail"
                 labelTextClassName="!bg-primary-1"
@@ -49,10 +45,9 @@ export const Login = () => {
               />
               <TextField
                 className="!w-[486px]"
-                input={password}
-                onChange={(e) => setPassword(e.target.value)}
                 divClassName="!text-t !tracking-[var(--body-2-regular-letter-spacing)] !text-[length:var(--body-2-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-2-regular-font-style)] !font-[number:var(--body-2-regular-font-weight)] !font-body-2-regular !leading-[var(--body-2-regular-line-height)]"
                 icon={<EyeOff className="!relative !w-[24px] !h-[24px]" color="#313131" />}
+                input=""
                 inputTextClassNameOverride="!tracking-[var(--body-1-regular-letter-spacing)] !text-[length:var(--body-1-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-1-regular-font-style)] !font-[number:var(--body-1-regular-font-weight)] !font-body-1-regular !leading-[var(--body-1-regular-line-height)]"
                 label="Password"
                 labelTextWrapperClassName="!bg-primary-1"
@@ -77,12 +72,12 @@ export const Login = () => {
               </div>
             </div>
             <div className="flex flex-col w-[486px] items-start relative flex-[0_0_auto] mr-[-1.99px]">
-              <Button
+              <a href="/home"><Button
                 className="!h-[49px] !flex !w-[486px]"
                 divClassName="!mt-[unset]"
                 property1="default"
                 text="Masuk"
-              />
+              /></a>
               <StateDefaultChangeWrapper
                 changeIcon="none"
                 className="!mt-[-17px] !flex-[0_0_auto] !flex !w-[486px]"
@@ -95,9 +90,9 @@ export const Login = () => {
                 <span className="text-[#303030] font-body-2-bold [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] text-[length:var(--body-2-bold-font-size)]">
                   Tidak punya akun?{" "}
                 </span>
-                <span className="text-[#235d3a] font-body-2-bold [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] text-[length:var(--body-2-bold-font-size)]">
+                <a className="text-[#235d3a] font-body-2-bold [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] text-[length:var(--body-2-bold-font-size)]" href="/signup">
                   Daftar
-                </span>
+                </a>
               </p>
             </div>
             <div className="flex w-[486px] items-center gap-[16px] relative flex-[0_0_auto] mr-[-1.99px]">
