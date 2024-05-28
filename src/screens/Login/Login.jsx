@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../../components/Button";
 import { NavbarGuest } from "../../components/NavbarGuest";
 import { StateDefaultChangeWrapper } from "../../components/StateDefaultChangeWrapper";
@@ -7,6 +7,7 @@ import { CheckboxFalse } from "../../icons/CheckboxFalse";
 import { EyeOff } from "../../icons/EyeOff";
 
 export const Login = () => {
+  
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-primary-1 overflow-hidden w-[1440px] h-[1024px] relative">
@@ -30,9 +31,9 @@ export const Login = () => {
             <div className="flex flex-col w-[486px] items-start gap-[24px] relative flex-[0_0_auto] mr-[-1.99px]">
               <TextField
                 className="!w-[486px]"
-                input=""
                 inputTextClassName="!tracking-[var(--body-1-regular-letter-spacing)] !text-[length:var(--body-1-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-1-regular-font-style)] !font-[number:var(--body-1-regular-font-weight)] !font-body-1-regular !leading-[var(--body-1-regular-line-height)]"
                 label="E-mail"
+                // inputType={inputType}
                 labelTextClassName="!bg-primary-1"
                 labelTextClassNameOverride="!tracking-[var(--body-2-regular-letter-spacing)] !text-[length:var(--body-2-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-2-regular-font-style)] !font-[number:var(--body-2-regular-font-weight)] !font-body-2-regular !leading-[var(--body-2-regular-line-height)]"
                 leadingIcon={false}
@@ -47,7 +48,7 @@ export const Login = () => {
                 className="!w-[486px]"
                 divClassName="!text-t !tracking-[var(--body-2-regular-letter-spacing)] !text-[length:var(--body-2-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-2-regular-font-style)] !font-[number:var(--body-2-regular-font-weight)] !font-body-2-regular !leading-[var(--body-2-regular-line-height)]"
                 icon={<EyeOff className="!relative !w-[24px] !h-[24px]" color="#313131" />}
-                input=""
+               
                 inputTextClassNameOverride="!tracking-[var(--body-1-regular-letter-spacing)] !text-[length:var(--body-1-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-1-regular-font-style)] !font-[number:var(--body-1-regular-font-weight)] !font-body-1-regular !leading-[var(--body-1-regular-line-height)]"
                 label="Password"
                 labelTextWrapperClassName="!bg-primary-1"
