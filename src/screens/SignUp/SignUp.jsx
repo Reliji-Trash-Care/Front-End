@@ -75,7 +75,7 @@ export const SignUp = () => {
                         </div>
                         <div className="inline-flex items-center px-[4px] py-0 absolute top-[-16px] left-[-4px] bg-white">
                           <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[14px] tracking-[0] leading-[19.6px] whitespace-nowrap">
-                            Nama Belakang
+                            Nama Belakang ss
                           </div>
                         </div>
                       </div>
