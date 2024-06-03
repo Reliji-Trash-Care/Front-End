@@ -9,6 +9,7 @@ export const SignUp = () => {
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-white overflow-hidden w-[1440px] h-[966px] relative">
+        <form>
         <div className="absolute w-[732px] h-[1024px] top-[-29px] left-0 bg-primary-2">
           <img
             className="absolute w-[486px] h-[529px] top-[157px] left-[120px] object-cover"
@@ -28,62 +29,67 @@ export const SignUp = () => {
           <div className="relative w-[486px] h-[606px]">
             <div className="flex flex-col w-[486px] items-start gap-[40px] relative">
               <div className="flex flex-col items-start gap-[24px] relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex items-start gap-[24px] relative self-stretch w-full flex-[0_0_auto]">
-                  <TextField
-                    className="!rounded-[15px] !h-[unset] !flex-1 !grow !w-[unset]"
-                    input=""
-                    inputTextClassName="!text-tersier-2 !tracking-[0] !text-[16px] !whitespace-nowrap ![font-style:unset] !font-normal ![font-family:'Nunito',Helvetica] !leading-[22.4px]"
-                    label="Nama"
-                    labelTextClassName="!bg-white"
-                    labelTextClassNameOverride="!text-tersier-2 !tracking-[0] !text-[14px] !whitespace-nowrap ![font-style:unset] !font-normal ![font-family:'Nunito',Helvetica] !leading-[19.6px]"
-                    leadingIcon={false}
-                    state="enabled"
-                    style="outlined"
-                    supportingText={false}
-                    textConfigurations="input-text"
-                    textFieldClassName="!rounded-[15px]"
-                    trailingIcon={false}
-                  />
-                </div>
-                <div className="flex w-[486px] items-start gap-[24px] relative flex-[0_0_auto]">
-                  <TextField
-                    className="!flex-1 !grow !w-[unset]"
-                    input=""
-                    inputTextClassName="!text-tersier-2 !tracking-[var(--body-1-regular-letter-spacing)] !text-[length:var(--body-1-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-1-regular-font-style)] !font-[number:var(--body-1-regular-font-weight)] !font-body-1-regular !leading-[var(--body-1-regular-line-height)]"
-                    label="E-mail"
-                    labelTextClassName="!bg-primary-1"
-                    labelTextClassNameOverride="!text-tersier-2 !tracking-[var(--body-2-regular-letter-spacing)] !text-[length:var(--body-2-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-2-regular-font-style)] !font-[number:var(--body-2-regular-font-weight)] !font-body-2-regular !leading-[var(--body-2-regular-line-height)]"
-                    leadingIcon={false}
-                    state="enabled"
-                    style="outlined"
-                    supportingText={false}
-                    textConfigurations="input-text"
-                    textFieldClassName="!rounded-[10px] !bg-primary-1"
-                    trailingIcon={false}
-                  />
-                  <TextField
-                    className="!flex-1 !grow !w-[unset]"
-                    input=""
-                    inputTextClassName="!text-tersier-2 !tracking-[var(--body-1-regular-letter-spacing)] !text-[length:var(--body-1-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-1-regular-font-style)] !font-[number:var(--body-1-regular-font-weight)] !font-body-1-regular !leading-[var(--body-1-regular-line-height)]"
-                    label="Nomor Telepon"
-                    labelTextClassName="!bg-primary-1"
-                    labelTextClassNameOverride="!text-tersier-2 !tracking-[var(--body-2-regular-letter-spacing)] !text-[length:var(--body-2-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-2-regular-font-style)] !font-[number:var(--body-2-regular-font-weight)] !font-body-2-regular !leading-[var(--body-2-regular-line-height)]"
-                    leadingIcon={false}
-                    state="enabled"
-                    style="outlined"
-                    supportingText={false}
-                    textConfigurations="input-text"
-                    textFieldClassName="!rounded-[10px] !bg-primary-1"
-                    trailingIcon={false}
-                  />
-                </div>
                 <div className="self-stretch w-full flex-[0_0_auto] rounded-[4px_4px_0px_0px] flex flex-col items-start relative">
                   <div className="flex flex-col items-start gap-[10px] relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[15px] border border-solid border-[#79747e]">
                     <div className="flex items-center pl-[16px] pr-0 py-[4px] relative self-stretch w-full flex-[0_0_auto] rounded-[4px_4px_0px_0px]">
-                      <div className="flex flex-col h-[40px] items-start justify-center relative flex-1 grow">
+                      <div className="flex flex-col h-[35px] items-start justify-center relative flex-1 grow">
                         <div className="inline-flex items-center relative flex-[0_0_auto]">
                           <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[16px] tracking-[0] leading-[22.4px] whitespace-nowrap">
-                            {""}
+                          <input type="text" size="62" className="!rounded-[15px] !h-[unset] !flex-1 !grow !w-[unset] border-none outline-none"/>
+                          </div>
+                        </div>
+                        <div className="inline-flex items-center px-[4px] py-0 absolute top-[-16px] left-[-4px] bg-white">
+                          <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[14px] tracking-[0] leading-[19.6px] whitespace-nowrap">
+                            E-mail
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex w-[486px] items-start gap-[24px] relative flex-[0_0_auto]">
+                  <div className="flex flex-col items-start gap-[10px] relative self-stretch w-[unset] flex-1 bg-white rounded-[15px] border border-solid border-[#79747e]">
+                    <div className="flex items-center pl-[16px] pr-0 py-[4px] relative self-stretch w-full flex-[0_0_auto] rounded-[4px_4px_0px_0px]">
+                      <div className="flex flex-col h-[35px] items-start justify-center relative flex-1 grow">
+                        <div className="inline-flex items-center relative flex-[0_0_auto]">
+                          <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[16px] tracking-[0] leading-[22.4px] whitespace-nowrap">
+                          <input type="text" size="22" className="!flex-1 !grow !w-[unset] outline-none border-none"/>
+                          </div>
+                        </div>
+                        <div className="inline-flex items-center px-[4px] py-0 absolute top-[-16px] left-[-4px] bg-white">
+                          <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[14px] tracking-[0] leading-[19.6px] whitespace-nowrap">
+                            Nama Depan
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex flex-col items-start gap-[10px] relative self-stretch w-[unset] flex-1 bg-white rounded-[15px] border border-solid border-[#79747e]">
+                    <div className="flex items-center pl-[16px] pr-0 py-[4px] relative self-stretch w-full flex-[0_0_auto] rounded-[4px_4px_0px_0px]">
+                      <div className="flex flex-col h-[35px] items-start justify-center relative flex-1 grow">
+                        <div className="inline-flex items-center relative flex-[0_0_auto]">
+                          <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[16px] tracking-[0] leading-[22.4px] whitespace-nowrap">
+                          <input type="text" size="22" className="!flex-1 !grow !w-[unset] outline-none border-none"/>
+                          </div>
+                        </div>
+                        <div className="inline-flex items-center px-[4px] py-0 absolute top-[-16px] left-[-4px] bg-white">
+                          <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[14px] tracking-[0] leading-[19.6px] whitespace-nowrap">
+                            Nama Belakang
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="self-stretch w-full flex-[0_0_auto] rounded-[4px_4px_0px_0px] flex flex-col items-start relative">
+                  <div className="flex flex-col items-start gap-[10px] relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[15px] border border-solid border-[#79747e]">
+                    <div className="flex items-center pl-[16px] pr-0 py-[4px] relative self-stretch w-full flex-[0_0_auto] rounded-[4px_4px_0px_0px]">
+                      <div className="flex flex-col h-[35px] items-start justify-center relative flex-1 grow">
+                        <div className="inline-flex items-center relative flex-[0_0_auto]">
+                          <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[16px] tracking-[0] leading-[22.4px] whitespace-nowrap">
+                            <input type="text" size="62" className="border-none outline-none "></input>
                           </div>
                         </div>
                         <div className="inline-flex items-center px-[4px] py-0 absolute top-[-16px] left-[-4px] bg-white">
@@ -98,10 +104,10 @@ export const SignUp = () => {
                 <div className="h-[56px] self-stretch w-full rounded-[4px_4px_0px_0px] flex flex-col items-start relative">
                   <div className="flex flex-col items-start gap-[10px] relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[15px] border border-solid border-[#79747e]">
                     <div className="flex items-center pl-[16px] pr-0 py-[4px] relative self-stretch w-full flex-[0_0_auto] rounded-[4px_4px_0px_0px]">
-                      <div className="flex flex-col h-[40px] items-start justify-center relative flex-1 grow">
+                      <div className="flex flex-col h-[35px] items-start justify-center relative flex-1 grow">
                         <div className="inline-flex items-center relative flex-[0_0_auto]">
                           <div className="relative w-fit mt-[-1.00px] [font-family:'Nunito',Helvetica] font-normal text-tersier-2 text-[16px] tracking-[0] leading-[22.4px] whitespace-nowrap">
-                            {""}
+                            <input type="password" size="58" className="border-none outline-none "></input>
                           </div>
                         </div>
                         <div className="inline-flex items-center px-[4px] py-0 absolute top-[-16px] left-[-4px] bg-white">
@@ -110,7 +116,7 @@ export const SignUp = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="flex flex-col w-[48px] h-[48px] items-center justify-center gap-[10px] p-[12px] relative">
+                      <div className="flex flex-col w-[48px] h-[44px] items-center justify-center gap-[10px] p-[12px] relative">
                         <EyeOff className="!relative !w-[24px] !h-[24px]" color="#1F1F1F" />
                       </div>
                     </div>
@@ -135,9 +141,9 @@ export const SignUp = () => {
                     <span className="text-[#1e1e1e] font-body-2-bold [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] text-[length:var(--body-2-bold-font-size)]">
                       Sudah punya akun?{" "}
                     </span>
-                    <span className="text-[#235d3a] font-body-2-bold [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] text-[length:var(--body-2-bold-font-size)]">
+                    <a className="text-[#235d3a] font-body-2-bold [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] text-[length:var(--body-2-bold-font-size)]" href="/login">
                       Masuk
-                    </span>
+                    </a>
                   </p>
                 </div>
               </div>
@@ -169,6 +175,7 @@ export const SignUp = () => {
           menuItemDivClassName="!underline !text-primary-2 !font-bold"
           to="/sign-up"
         />
+      </form>
       </div>
     </div>
   );
