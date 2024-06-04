@@ -22,20 +22,20 @@ export const SetelanProfil = () => {
               property1="default"
               text="Edit Profil"
             />
-            <Jadwal
+            <a href="/setelanganti" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative"><Jadwal
               className="!flex-[0_0_auto]"
               divClassName="!mt-[-1.00px] !text-tersier-2"
               hasCalendar={false}
               property1="default"
               text="Ganti Password"
-            />
-            <Jadwal
+            /></a>
+            <a href="/setelannotifikasi" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative"><Jadwal
               className="!flex-[0_0_auto]"
               divClassName="!mt-[-1.00px] !text-tersier-2"
               hasCalendar={false}
               property1="default"
               text="Notifikasi"
-            />
+            /></a>
           </div>
           <div className="inline-flex items-center gap-[12px] absolute top-[30px] left-[427px]">
             <img
