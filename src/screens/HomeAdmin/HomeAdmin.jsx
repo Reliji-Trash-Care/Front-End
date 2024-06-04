@@ -12,7 +12,7 @@ export const HomeAdmin = () => {
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-primary-1 overflow-hidden w-[1440px] h-[2181px] relative">
-        <DetailInputJadwal
+        <FiturJadwalSampah
           calendar="../../../static/img/calendar-5.png"
           className="!absolute !left-[323px] !top-[86px]"
           property1="default"
