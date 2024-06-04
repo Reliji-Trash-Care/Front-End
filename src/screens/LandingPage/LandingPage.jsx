@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Button } from "../../components/Button";
 import { ContainerBerita } from "../../components/ContainerBerita";
 import { Footer } from "../../components/Footer";
@@ -93,7 +94,7 @@ export const LandingPage = () => {
                   <p className="relative flex-1 mt-[-1.00px] font-heading-8-bold font-[number:var(--heading-8-bold-font-weight)] text-variable-collection-pure-black text-[length:var(--heading-8-bold-font-size)] tracking-[var(--heading-8-bold-letter-spacing)] leading-[var(--heading-8-bold-line-height)] [font-style:var(--heading-8-bold-font-style)]">
                     Atasi Persoalan Sampah, Pemkot Jambi Keluarkan Instruksi Wali Kota
                   </p>
-                  <img className="relative flex-[0_0_auto]" alt="Icon wrap" src="../../../static/img/icon-wrap-5.svg" />
+                  <Link to="/beritadetaillatest"><img className="relative flex-[0_0_auto]" alt="Icon wrap" src="../../../static/img/icon-wrap-5.svg" /></Link>
                 </div>
                 <p className="mb-[-75.00px] relative self-stretch font-body-2-regular font-[number:var(--body-2-regular-font-weight)] text-tersier-2 text-[length:var(--body-2-regular-font-size)] tracking-[var(--body-2-regular-letter-spacing)] leading-[var(--body-2-regular-line-height)] [font-style:var(--body-2-regular-font-style)]">
                   Atasi permasalahan sampah Pemerintah Kota (Pemkot) Jambi mengeluarkan instruksi Wali Kota No 5 Tahun

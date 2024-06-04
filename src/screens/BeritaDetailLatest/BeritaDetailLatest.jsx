@@ -18,14 +18,14 @@ export const BeritaDetailLatest = () => {
         </div>
         <ContainerBerita2
           className="!absolute !left-[324px] !top-[122px]"
-          ramadhanMomentum="../../../static/img/ramadhan-momentum-untuk-menyadari-bahaya-sampah-1710922717-1-1.png"
+          ramadhanMomentum="../../../static/img/sampah-di-tpa-talang-gulo-kota-jambi-5-1.png"
           ramadhanMomentumClassName="![object-fit:unset]"
           text="Atasi Persoalan Sampah, Pemkot Jambi Keluarkan Instruksi Wali Kota"
           text1="Jambi.tribunnews.com"
           text2="M. Yon Rinaldi"
         />
         <div className="inline-flex flex-col items-center justify-center gap-[24px] absolute top-[708px] left-[324px]">
-          <p className="relative w-[792px] mt-[-1.00px] font-heading-7-regular font-[number:var(--heading-7-regular-font-weight)] text-tersier-2 text-[length:var(--heading-7-regular-font-size)] text-justify tracking-[var(--heading-7-regular-letter-spacing)] leading-[var(--heading-7-regular-line-height)] [font-style:var(--heading-7-regular-font-style)]">
+          <p className="relative w-[792px] mt-[120.00px] font-heading-7-regular font-[number:var(--heading-7-regular-font-weight)] text-tersier-2 text-[length:var(--heading-7-regular-font-size)] text-justify tracking-[var(--heading-7-regular-letter-spacing)] leading-[var(--heading-7-regular-line-height)] [font-style:var(--heading-7-regular-font-style)]">
             Atasi permasalahan sampah Pemerintah Kota (Pemkot) Jambi mengeluarkan instruksi Wali Kota No 5 Tahun 2024.
             Instruksi tersebut mengenai pembentukan Bank Sampah. Dimana setiap instansi hingga badan usaha harus
             memiliki bank sampah.
