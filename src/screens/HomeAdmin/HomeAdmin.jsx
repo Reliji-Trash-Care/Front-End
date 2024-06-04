@@ -6,12 +6,13 @@ import { FiturTagihanIuran } from "../../components/FiturTagihanIuran";
 import { NavbarUserFitur } from "../../components/NavbarUserFitur";
 import { SideBarWrapper } from "../../components/SideBarWrapper";
 import { SubJudulFix } from "../../components/SubJudulFix";
+import { DetailInputJadwal } from "../DetailInputJadwal/DetailInputJadwal";
 
 export const HomeAdmin = () => {
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-primary-1 overflow-hidden w-[1440px] h-[2181px] relative">
-        <FiturJadwalSampah
+        <DetailInputJadwal
           calendar="../../../static/img/calendar-5.png"
           className="!absolute !left-[323px] !top-[86px]"
           property1="default"
