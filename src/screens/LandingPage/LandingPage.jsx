@@ -63,13 +63,13 @@ export const LandingPage = () => {
                 Deteksi Sampah
               </div>
             </div>
+            <a href="/tentangkami">
             <Button
               className="!flex !absolute !left-0 !bg-primary-1 !w-[120px] !top-[325px]"
               divClassName="!mr-[-2.00px] !text-variable-collection-pure-black !ml-[-2.00px]"
               property1="default"
               text="Selengkapnya" 
-              // onClick={() => navigate('/TentangKami')} 
-            />
+            /></a>
           </div>
         </div>
         <ContainerBerita
