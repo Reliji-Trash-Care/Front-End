@@ -14,27 +14,27 @@ export const SetelanGanti = () => {
           <div className="w-[690px] left-[388px] absolute h-[600px] top-0 bg-primary-1 rounded-[15px] shadow-drop-shadow-2" />
           <div className="w-[282px] left-[82px] absolute h-[600px] top-0 bg-primary-1 rounded-[15px] shadow-drop-shadow-2" />
           <div className="inline-flex flex-col items-start gap-[36px] absolute top-[38px] left-[109px]">
-            <Jadwal
+          <a href="/setelanprofil" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative"><Jadwal
               className="!flex-[0_0_auto]"
-              divClassName="!mt-[-1.00px] !text-primary-2 !tracking-[0] !text-[16px] ![font-style:unset] !font-normal ![font-family:'Nunito',Helvetica] !leading-[22.4px]"
+              divClassName="!mt-[-1.00px] !text-tersier-2"
               hasCalendar={false}
               property1="default"
-              text="Edit Profil"
-            />
-            <Jadwal
-              className="!flex-[0_0_auto] !bg-secondary-1"
-              divClassName="!mt-[-1.00px] !text-primary-2 !tracking-[0] !text-[16px] ![font-style:unset] !font-bold ![font-family:'Nunito',Helvetica] !leading-[22.4px]"
+              text="Edit profile"
+            /></a>
+            <a href="/setelanganti" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative"><Jadwal
+              className="!flex-[0_0_auto]"
+              divClassName="!mt-[-1.00px] !text-tersier-2"
               hasCalendar={false}
               property1="default"
               text="Ganti Password"
-            />
-            <Jadwal
+            /></a>
+            <a href="/setelannotifikasi" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative"><Jadwal
               className="!flex-[0_0_auto]"
-              divClassName="!mt-[-1.00px] !text-primary-2"
+              divClassName="!mt-[-1.00px] !text-tersier-2"
               hasCalendar={false}
               property1="default"
               text="Notifikasi"
-            />
+            /></a>
           </div>
           <div className="inline-flex flex-col items-start gap-[24px] absolute top-[32px] left-[427px]">
             <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
