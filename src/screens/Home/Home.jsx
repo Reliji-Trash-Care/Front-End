@@ -1,4 +1,3 @@
-import React from "react";
 import { FiturChatPengelola } from "../../components/FiturChatPengelola";
 import { FiturDeteksi } from "../../components/FiturDeteksi";
 import { FiturJadwalSampah } from "../../components/FiturJadwalSampah";

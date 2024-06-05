@@ -33,7 +33,7 @@ export const Profil = ({
             state.property1 === "variant-2" ? "text-primary-2" : "text-primary-1"
           }`}
         >
-          Sopia
+          Admin
         </div>
       </div>
       <img
