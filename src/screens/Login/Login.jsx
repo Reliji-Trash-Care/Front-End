@@ -103,7 +103,9 @@ export const Login = () => {
               </div>
               <div className="relative flex-1 grow h-px bg-t opacity-25" />
             </div>
-            <img className="relative w-[486px] flex-[0_0_auto] mr-[-1.99px]" alt="Frame" src="../../../static/img/frame-228.svg" />
+            <a href="home">
+              <img className="relative w-[486px] flex-[0_0_auto] mr-[-1.99px]" alt="Frame" src="../../../static/img/frame-228.svg" />
+              </a>
           </div>
         </div>
         <NavbarGuest
