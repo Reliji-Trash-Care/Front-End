@@ -1,18 +1,42 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
+import { useState } from "react";
+import { useRef } from "react";
+import { useEffect } from "react";
+import { Frame } from "./Frame";
+import { Modal } from "../Modal";
 
 export const Profil = ({
   property1,
   className,
   openartImage = "../../../static/img/openart-image-nfswrdqc-1711466557108-raw-2-1.png",
   arrowDown = "../../../static/img/arrow-down-2.svg",
+  setting = "../../../static/img/setting.svg",
+  logout = "../../../static/img/logout.svg",
 }) => {
   const [state, dispatch] = useReducer(reducer, {
     property1: property1 || "default",
   });
 
+  const [isModalVisible, setModalVisible] = useState(false);
+  const [modalPosition, setModalPosition] = useState({ top: 0, left: 0, right: 0 });
+  const profilRef = useRef(null);
+
+  useEffect(() => {
+    if (profilRef.current && isModalVisible) {
+      const rect = profilRef.current.getBoundingClientRect();
+      setModalPosition({
+        // top: rect.bottom + window.scrollY, // posisi modal tepat di bawah komponen profil
+        left: rect.left + window.scrollX,  // sejajar dengan sisi kiri komponen profil
+        top: rect.bottom + window.scrollY, // posisi modal tepat di bawah komponen profil
+        // right: window.innerWidth - rect.right + window.scrollX,  // sejajar dengan sisi kanan komponen profil
+      });
+    }
+  }, [isModalVisible]);
+
   return (
+    <div className="relative">
     <div
       className={`w-[123px] flex items-center rounded-[10px] relative ${
         state.property1 === "variant-2" ? "bg-additional-1" : "bg-primary-2"
@@ -23,7 +47,12 @@ export const Profil = ({
       onMouseEnter={() => {
         dispatch("mouse_enter");
       }}
+
+      onClick={() => {
+        setModalVisible(true);
+      }}
     >
+
       <div className="inline-flex items-start gap-[10px] flex-[0_0_auto] p-[10px] relative">
         <img className="w-[24px] object-cover h-[24px] relative" alt="Openart image" src={openartImage} />
       </div>
@@ -42,6 +71,21 @@ export const Profil = ({
         src={state.property1 === "variant-2" ? "../../../static/img/arrow-down-2-1.svg" : arrowDown}
       />
     </div>
+
+    {isModalVisible && (
+        <div className="absolute bg-white border border-gray-300 shadow-lg rounded-[10px] p-[10px] z-50"
+        style={{ top: modalPosition.top, right: modalPosition.right }}>
+            <Modal isVisible={isModalVisible} onClose={() => setModalVisible(false)}>
+                <Frame property1={state.property1} openartImage={openartImage} setting={setting} logout={logout} />
+            </Modal>
+        </div>
+      )}
+
+      
+
+    </div>
+
+    
   );
 };
 
@@ -67,4 +111,6 @@ Profil.propTypes = {
   property1: PropTypes.oneOf(["variant-2", "default"]),
   openartImage: PropTypes.string,
   arrowDown: PropTypes.string,
+  setting: PropTypes.string,
+  logout: PropTypes.string,
 };

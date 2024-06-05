@@ -1,0 +1,1 @@
+export { UploadGambar } from "./UploadGambar";

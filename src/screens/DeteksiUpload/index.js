@@ -1,0 +1,1 @@
+export { DeteksiUpload } from "./DeteksiUpload";

@@ -48,7 +48,6 @@ export const Login = () => {
                 className="!w-[486px]"
                 divClassName="!text-t !tracking-[var(--body-2-regular-letter-spacing)] !text-[length:var(--body-2-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-2-regular-font-style)] !font-[number:var(--body-2-regular-font-weight)] !font-body-2-regular !leading-[var(--body-2-regular-line-height)]"
                 icon={<EyeOff className="!relative !w-[24px] !h-[24px]" color="#313131" />}
-               
                 inputTextClassNameOverride="!tracking-[var(--body-1-regular-letter-spacing)] !text-[length:var(--body-1-regular-font-size)] !whitespace-nowrap ![font-style:var(--body-1-regular-font-style)] !font-[number:var(--body-1-regular-font-weight)] !font-body-1-regular !leading-[var(--body-1-regular-line-height)]"
                 label="Password"
                 labelTextWrapperClassName="!bg-primary-1"
