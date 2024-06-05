@@ -5,6 +5,7 @@ import { FiturTagihanIuran } from "../../components/FiturTagihanIuran";
 import { NavbarUserFitur } from "../../components/NavbarUserFitur";
 import { SideBarWrapper } from "../../components/SideBarWrapper";
 import { SubJudulFix } from "../../components/SubJudulFix";
+import { DetailInputJadwal } from "../DetailInputJadwal/DetailInputJadwal";
 
 export const HomeAdmin = () => {
   return (
