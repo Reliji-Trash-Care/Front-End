@@ -5,7 +5,6 @@ import { FiturTagihanIuran } from "../../components/FiturTagihanIuran";
 import { NavbarUserFitur } from "../../components/NavbarUserFitur";
 import { SideBarWrapper } from "../../components/SideBarWrapper";
 import { SubJudulFix } from "../../components/SubJudulFix";
-import { DetailInputJadwal } from "../DetailInputJadwal/DetailInputJadwal";
 
 export const HomeAdmin = () => {
   return (
@@ -353,6 +352,7 @@ export const HomeAdmin = () => {
           group="../../../static/img/group-1000002107-2.png"
           property1="default"
         />
+        <a href="/login"></a>
         <NavbarUserFitur className="!fixed !left-[324px] !top-0" profilArrowDown="../../../static/img/arrow-down-2-3.svg" />
         <SideBarWrapper
           className="!h-[2248px] !fixed !left-0 !top-0"

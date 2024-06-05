@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import React from "react";
 import { useReducer } from "react";
 
 export const Profil = ({
@@ -33,7 +32,12 @@ export const Profil = ({
             state.property1 === "variant-2" ? "text-primary-2" : "text-primary-1"
           }`}
         >
-          Admin
+          <span
+            className="cursor-pointer"
+            onClick={() => window.location.href = '/login'}
+          >
+            Logout
+          </span>
         </div>
       </div>
       <img

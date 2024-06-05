@@ -31,7 +31,7 @@ export const SetelanProfil = () => {
             <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
               <div className="flex w-[229px] items-center gap-[12px] px-0 py-[6px] relative flex-[0_0_auto] bg-primary-1 rounded-[10px]">
                 <div className="relative w-fit mt-[-1.00px] font-body-1-regular font-[number:var(--body-1-regular-font-weight)] text-black text-[length:var(--body-1-regular-font-size)] text-center tracking-[var(--body-1-regular-letter-spacing)] leading-[var(--body-1-regular-line-height)] whitespace-nowrap [font-style:var(--body-1-regular-font-style)]">
-                  Sopia
+                  Admin
                 </div>
               </div>
               <MenuItem
