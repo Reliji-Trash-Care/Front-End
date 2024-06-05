@@ -1,4 +1,3 @@
-import React from "react";
 import { FiturChatPengelola } from "../../components/FiturChatPengelola";
 import { FiturDeteksi } from "../../components/FiturDeteksi";
 import { FiturJadwalSampah } from "../../components/FiturJadwalSampah";
@@ -353,6 +352,7 @@ export const HomeAdmin = () => {
           group="../../../static/img/group-1000002107-2.png"
           property1="default"
         />
+        <a href="/login"></a>
         <NavbarUserFitur className="!fixed !left-[324px] !top-0" profilArrowDown="../../../static/img/arrow-down-2-3.svg" />
         <SideBarWrapper
           className="!h-[2248px] !fixed !left-0 !top-0"
