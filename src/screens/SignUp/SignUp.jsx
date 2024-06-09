@@ -1,9 +1,8 @@
-import React from "react";
 import { Button } from "../../components/Button";
 import { NavbarGuest } from "../../components/NavbarGuest";
-import { TextField } from "../../components/TextField";
 import { CheckboxFalse } from "../../icons/CheckboxFalse";
 import { EyeOff } from "../../icons/EyeOff";
+import { Link } from "react-router-dom";
 
 export const SignUp = () => {
   return (
@@ -130,12 +129,13 @@ export const SignUp = () => {
                 </div>
               </div>
               <div className="relative w-[486px] h-[74px]">
+                <Link to="/homeadmin">
                 <Button
                   className="!h-[46px] !rounded-[15px] !flex !absolute !left-0 !w-[486px] !top-0"
                   divClassName="!mt-[unset]"
                   property1="default"
                   text="Daftar"
-                />
+                /></Link>
                 <div className="flex flex-col w-[486px] items-start gap-[16px] absolute top-[54px] left-0">
                   <p className="relative w-[486px] mt-[-1.00px] font-body-2-bold font-[number:var(--body-2-bold-font-weight)] text-transparent text-[length:var(--body-2-bold-font-size)] text-center tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] [font-style:var(--body-2-bold-font-style)]">
                     <span className="text-[#1e1e1e] font-body-2-bold [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] text-[length:var(--body-2-bold-font-size)]">

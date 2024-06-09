@@ -8,8 +8,7 @@ export const TextField = ({
   supportingText = true,
   supportingText1 = "Supporting text",
   label = "",
-  input = "Input",
-  style,
+  input = <input type="text" className="w-[400px] mx-auto border-none focus:outline-none"/>,
   state,
   textConfigurations,
   leadingIcon,
@@ -49,6 +48,7 @@ export const TextField = ({
         }`}
       >
         <div
+          
           className={`w-full flex self-stretch items-center flex-[0_0_auto] relative ${
             state === "disabled" ? "border border-solid" : ""
           } ${

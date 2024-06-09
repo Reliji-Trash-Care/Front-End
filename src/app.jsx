@@ -24,6 +24,15 @@ import { ListBerita } from "./screens/ListBerita/ListBerita";
 import { TagihanAdmin } from "./screens/TagihanAdmin/TagihanAdmin";
 import { ChatPengelolaAdmin } from "./screens/ChatPengelolaAdmin/ChatPengelolaAdmin";
 import { DeteksiAdmin } from "./screens/DeteksiAdmin/DeteksiAdmin";
+import { TagihanPilih } from "./screens/TagihanPilih/TagihanPilih";
+import { TagihanBelum } from './screens/TagihanBelum/TagihanBelum';
+import { JadwalSampahUser } from './screens/JadwalSampahUser/JadwalSampahUser';
+import { DeteksiUpload } from './screens/DeteksiUpload/DeteksiUpload'
+import { ChatPengelolaUser } from './screens/ChatPengelolaUser/ChatPengelolaUser';
+import { ForgotPassword } from "./screens/ForgotPassword/ForgotPassword";
+import { TagihanStatus } from "./screens/TagihanStatus/TagihanStatus";
+import { TagihanSelesai } from './screens/TagihanSelesai/TagihanSelesai';
+import { BeritaLatestUser } from './screens/BeritaLatestUser/BeritaLatestUser';
 
 const App = () => {
   return (
@@ -39,11 +48,20 @@ const App = () => {
     <Route path='/beritadetaillatest' element={<BeritaDetailLatest/>} />
     <Route path='/login' element={<Login/>} />
     <Route path='/signup' element={<SignUp/>} />
+    <Route path='/forgotpassword' element={<ForgotPassword/>} />
     <Route path='/home' element={<Home/>} />
     <Route path='/beritauser' element={<BeritaUser/>} />
     <Route path='/beritadetailuser' element={<BeritaDetailHotUser/>} />
+    <Route path='/beritalatestuser' element={<BeritaLatestUser/>} />
     <Route path='/setelanprofil' element={<SetelanProfil/>} />
+    <Route path='/jadwalsampahuser' element={<JadwalSampahUser/>} />
+    <Route path='/tagihanbelum' element={<TagihanBelum/>} />
+    <Route path='/tagihanpilih' element={<TagihanPilih/>} />
+    <Route path='/tagihanstatus' element={<TagihanStatus/>} />
+    <Route path='/tagihanselesai' element={<TagihanSelesai/>} />
+    <Route path='/chatpengelolauser' element={<ChatPengelolaUser/>} />
     <Route path='/deteksiuser' element={<DeteksiUser/>} />
+    <Route path='/deteksiupload' element={<DeteksiUpload/>} />
     <Route path='/homeadmin' element={<HomeAdmin/>} />
     <Route path='/setelanganti' element={<SetelanGanti/>} />
     <Route path='/setelannotifikasi' element={<SetelanNotifikasi/>} />

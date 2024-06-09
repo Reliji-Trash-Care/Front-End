@@ -22,7 +22,7 @@ export const NavbarGuest = ({ className, logoPlaceholderGroup = "", menuItemDivC
           <Link to="/" className="!flex-[0_0_auto]">
             <MenuItem
               className="!flex-[0_0_auto]"
-              divClassName={menuItemDivClassName}
+              divClassName="!text-primary-2"
               property1="default"
               text="Beranda"
             />
@@ -30,7 +30,7 @@ export const NavbarGuest = ({ className, logoPlaceholderGroup = "", menuItemDivC
           <Link to="/tentangkami" className="!flex-[0_0_auto]">
             <MenuItem
               className="!flex-[0_0_auto]"
-              divClassName={menuItemDivClassName}
+              divClassName="!text-primary-2"
               property1="default"
               text="Tentang Kami"
             />
@@ -38,7 +38,7 @@ export const NavbarGuest = ({ className, logoPlaceholderGroup = "", menuItemDivC
           <Link to="/layanan" className="!flex-[0_0_auto]">
             <MenuItem
               className="!flex-[0_0_auto]"
-              divClassName={menuItemDivClassName}
+              divClassName="!text-primary-2"
               property1="default"
               text="Layanan"
             />
@@ -46,7 +46,7 @@ export const NavbarGuest = ({ className, logoPlaceholderGroup = "", menuItemDivC
           <Link to="/beritaguest" className="!flex-[0_0_auto]">
             <MenuItem
               className="!flex-[0_0_auto]"
-              divClassName={menuItemDivClassName}
+              divClassName="!text-primary-2"
               property1="default"
               text="Berita"
             />

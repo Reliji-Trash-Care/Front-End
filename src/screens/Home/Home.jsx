@@ -1,4 +1,3 @@
-import React from "react";
 import { FiturChatPengelola } from "../../components/FiturChatPengelola";
 import { FiturDeteksi } from "../../components/FiturDeteksi";
 import { FiturJadwalSampah } from "../../components/FiturJadwalSampah";
@@ -27,7 +26,7 @@ export const Home = () => {
             <div className="items-center justify-center gap-[8px] inline-flex relative flex-[0_0_auto]">
               <img className="relative w-[20px] h-[20px]" alt="Arrow left" src="../../../static/img/arrow-left.svg" />
               <div className="font-text-sm-medium font-[number:var(--text-sm-medium-font-weight)] text-variable-collection-pure-black leading-[var(--text-sm-medium-line-height)] relative w-fit mt-[-1.00px] text-[length:var(--text-sm-medium-font-size)] tracking-[var(--text-sm-medium-letter-spacing)] whitespace-nowrap [font-style:var(--text-sm-medium-font-style)]">
-                Sebelumnya
+                <a href="#" className="text-inherit">Sebelumnya</a>
               </div>
             </div>
           </button>
@@ -85,7 +84,7 @@ export const Home = () => {
           <button className="all-[unset] box-border items-start inline-flex relative flex-[0_0_auto]">
             <div className="items-center justify-center gap-[8px] inline-flex relative flex-[0_0_auto]">
               <div className="font-text-sm-medium font-[number:var(--text-sm-medium-font-weight)] text-variable-collection-pure-black leading-[var(--text-sm-medium-line-height)] relative w-fit mt-[-1.00px] text-[length:var(--text-sm-medium-font-size)] tracking-[var(--text-sm-medium-letter-spacing)] whitespace-nowrap [font-style:var(--text-sm-medium-font-style)]">
-                Selanjutnya
+              <a href="#" className="text-inherit">Selanjutnya</a>
               </div>
               <img className="relative w-[20px] h-[20px]" alt="Arrow right" src="../../../static/img/arrow-right.svg" />
             </div>
