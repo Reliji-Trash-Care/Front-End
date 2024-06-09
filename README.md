@@ -1,8 +1,26 @@
-# React + Vite
+# Reliji Trash Care
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## prerequisite
 
-Currently, two official plugins are available:
+Sebelum memulai, pastikan Anda telah memenuhi persyaratan berikut:
+- Anda telah menginstal [Git](https://git-scm.com/)
+- Anda telah menginstal [Node.js dan npm](https://nodejs.org/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalasi
+
+### 1. Clone Repositori
+
+Pertama, clone repositori ini menggunakan Git:
+
+```bash
+git clone https://github.com/Reliji-Trash-Care/Front-End.git
+```
+
+### 2. Instal and Run
+
+Instal dependensi yang diperlukan di terminal menggunakan npm:
+
+```bash
+npm install
+npm run dev
+```
