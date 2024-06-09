@@ -82,7 +82,7 @@ export const SideBarAdmin = ({
   );
 };
 
-SideBarWrapper.propTypes = {
+SideBarAdmin.propTypes = {
   logoPlaceholderGroup: PropTypes.string,
 };
 
