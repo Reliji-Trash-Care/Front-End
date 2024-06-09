@@ -23,11 +23,7 @@ export const Tagihan = ({ property1, className, wallet = "/img/wallet-1.svg", di
       <div
         className={`font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative ${divClassName}`}
       >
-<<<<<<< HEAD
         Iuran
-=======
-        <a href="/tagihanadmin" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-primary-2 font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative">Tagihan Iuran</a>
->>>>>>> 5b6c9fcb3a810a3cf5ddf9f04d2256c7817078b8
       </div>
     </div>
   );

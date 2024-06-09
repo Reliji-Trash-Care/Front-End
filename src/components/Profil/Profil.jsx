@@ -76,17 +76,6 @@ export const Profil = ({
       />
     </div>
 
-    {isModalVisible && (
-        <div className="absolute bg-white border border-gray-300 shadow-lg rounded-[10px] p-[10px] z-50"
-        style={{ top: modalPosition.top, right: modalPosition.right }}>
-            <Modal isVisible={isModalVisible} onClose={() => setModalVisible(false)}>
-                <Frame property1={state.property1} openartImage={openartImage} setting={setting} logout={logout} />
-            </Modal>
-        </div>
-      )}
-
-      
-
     </div>
 
     
