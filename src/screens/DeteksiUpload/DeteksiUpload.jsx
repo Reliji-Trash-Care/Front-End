@@ -5,6 +5,7 @@ import { SideBarWrapper } from "../../components/SideBarWrapper";
 import { UploadGambar } from "../../components/UploadGambar";
 
 export const DeteksiUpload = () => {
+
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-primary-1 overflow-hidden w-[1440px] h-[744px] relative">
@@ -58,7 +59,8 @@ export const DeteksiUpload = () => {
               <div className="flex flex-col items-center gap-[8px] relative self-stretch w-full flex-[0_0_auto] mt-[-13.00px] mb-[-13.00px]">
                 <img className="relative w-[224px] h-[178px] object-cover" alt="Glass" src="../../../static/img/glass1-1.png" />
                 <button className="all-[unset] box-border flex w-[136px] h-[35px] items-center justify-center gap-[10px] px-[16px] py-[10px] relative bg-primary-1 rounded-[10px] border-[1.5px] border-solid border-primary-2">
-                  <button className="all-[unset] box-border relative w-fit mt-[-4.00px] mb-[-1.00px] font-body-2-bold font-[number:var(--body-2-bold-font-weight)] text-primary-2 text-[length:var(--body-2-bold-font-size)] text-center tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] whitespace-nowrap [font-style:var(--body-2-bold-font-style)]">
+                  <button className="all-[unset] box-border relative w-fit mt-[-4.00px] mb-[-1.00px] font-body-2-bold font-[number:var(--body-2-bold-font-weight)] text-primary-2 text-[length:var(--body-2-bold-font-size)] text-center tracking-[var(--body-2-bold-letter-spacing)] leading-[var(--body-2-bold-line-height)] whitespace-nowrap [font-style:var(--body-2-bold-font-style)]"
+                  >
                     Ambil Gambar
                   </button>
                 </button>
@@ -78,11 +80,11 @@ export const DeteksiUpload = () => {
             </div>
           </div>
         </div>
-        <div className="inline-flex items-start gap-[9.46px] px-[30.28px] py-[15.14px] absolute top-[-1816px] left-[321px] bg-primary-2 rounded-[10px] shadow-[0px_3.78px_4.73px_#00000066]">
+        {/* <div className="inline-flex items-start gap-[9.46px] px-[30.28px] py-[15.14px] absolute top-[-1816px] left-[321px] bg-primary-2 rounded-[10px] shadow-[0px_3.78px_4.73px_#00000066]">
           <div className="relative w-fit mt-[-0.95px] [font-family:'Nunito',Helvetica] font-bold text-[#f3ffd1] text-[15.1px] text-center tracking-[0.08px] leading-[18.2px] whitespace-nowrap">
             Bayar
           </div>
-        </div>
+        </div> */}
         <SideBarWrapper
           chatDivClassName="!text-primary-2 !tracking-[0] !text-[16px] ![font-style:unset] !font-normal ![font-family:'Nunito',Helvetica] !leading-[22.4px]"
           className="!h-[744px] !fixed !left-0 !top-0"

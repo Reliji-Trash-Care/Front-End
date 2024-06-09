@@ -37,7 +37,7 @@ export const Frame = ({
         <div className="inline-flex items-center gap-2 flex-[0_0_auto] relative">
           <img className="w-6 h-6 relative" alt="Setting" src={property1 === "variant-2" ? "image.svg" : setting} />
           <div className="inline-flex items-center gap-2.5 flex-[0_0_auto] justify-center relative">
-            <div className="font-body-2-regular w-fit mt-[-1.00px] tracking-[var(--body-2-regular-letter-spacing)] text-[length:var(--body-2-regular-font-size)] [font-style:var(--body-2-regular-font-style)] text-[#8f8f8f] font-[number:var(--body-2-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-2-regular-line-height)] relative">
+            <div onClick={() => window.location.href = '/setelanprofil'} className="cursor-pointer font-body-2-regular w-fit mt-[-1.00px] tracking-[var(--body-2-regular-letter-spacing)] text-[length:var(--body-2-regular-font-size)] [font-style:var(--body-2-regular-font-style)] text-[#8f8f8f] font-[number:var(--body-2-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-2-regular-line-height)] relative">
               Setelan
             </div>
           </div>
@@ -45,7 +45,9 @@ export const Frame = ({
         <div className="inline-flex items-center gap-2 flex-[0_0_auto] relative">
           <img className="w-6 h-6 relative" alt="Logout" src={property1 === "variant-2" ? "logout-2.svg" : logout} />
           <div className="inline-flex items-center gap-2.5 flex-[0_0_auto] justify-center relative">
-            <div className="font-body-2-regular w-fit mt-[-1.00px] tracking-[var(--body-2-regular-letter-spacing)] text-[length:var(--body-2-regular-font-size)] [font-style:var(--body-2-regular-font-style)] text-[#8f8f8f] font-[number:var(--body-2-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-2-regular-line-height)] relative">
+            <div 
+            onClick={() => window.location.href = '/login'}
+            className="cursor-pointer font-body-2-regular w-fit mt-[-1.00px] tracking-[var(--body-2-regular-letter-spacing)] text-[length:var(--body-2-regular-font-size)] [font-style:var(--body-2-regular-font-style)] text-[#8f8f8f] font-[number:var(--body-2-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-2-regular-line-height)] relative">
               Keluar
             </div>
           </div>
