@@ -12,7 +12,7 @@ export const Profil = ({
   openartImage = "../../../static/img/openart-image-nfswrdqc-1711466557108-raw-2-1.png",
   arrowDown = "../../../static/img/arrow-down-2.svg",
   setting = "../../../static/img/setting.svg",
-  logout = "../../../static/img/logout.svg",
+  logout = "../../../static/img/setting.svg",
 }) => {
   const [state, dispatch] = useReducer(reducer, {
     property1: property1 || "default",
@@ -21,6 +21,7 @@ export const Profil = ({
   const [isModalVisible, setModalVisible] = useState(false);
   const [modalPosition, setModalPosition] = useState({ top: 0, left: 0, right: 0 });
   const profilRef = useRef(null);
+  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     if (profilRef.current && isModalVisible) {
@@ -35,7 +36,8 @@ export const Profil = ({
   }, [isModalVisible]);
 
   return (
-    <div className="relative">
+    <div 
+    className="relative">
     <div
       className={`w-[123px] flex items-center rounded-[10px] relative ${
         state.property1 === "variant-2" ? "bg-additional-1" : "bg-primary-2"
@@ -55,7 +57,7 @@ export const Profil = ({
       <div className="inline-flex items-start gap-[10px] flex-[0_0_auto] p-[10px] relative">
         <img className="w-[24px] object-cover h-[24px] relative" alt="Openart image" src={openartImage} />
       </div>
-      <div className="inline-flex items-center gap-[10px] flex-[0_0_auto] ml-[-6px] p-[10px] justify-center relative">
+      <div  onClick={() => setIsOpen((prev) => !prev)} className="inline-flex items-center gap-[10px] flex-[0_0_auto] ml-[-6px] p-[10px] justify-center relative">
         <div
           className={`font-body-2-bold w-fit mt-[-1.00px] tracking-[var(--body-2-bold-letter-spacing)] text-[length:var(--body-2-bold-font-size)] [font-style:var(--body-2-bold-font-style)] font-[number:var(--body-2-bold-font-weight)] text-center whitespace-nowrap leading-[var(--body-2-bold-line-height)] relative ${
             state.property1 === "variant-2" ? "text-primary-2" : "text-primary-1"
@@ -63,9 +65,9 @@ export const Profil = ({
         >
           <span
             className="cursor-pointer"
-            onClick={() => window.location.href = '/login'}
+            
           >
-            Logout
+            Sopia
           </span>
         </div>
       </div>
@@ -75,6 +77,24 @@ export const Profil = ({
         src={state.property1 === "variant-2" ? "../../../static/img/arrow-down-2-1.svg" : arrowDown}
       />
     </div>
+
+    {/* {isModalVisible && (
+        <div className="absolute bg-white border border-gray-300 shadow-lg rounded-[10px] p-[10px] z-50">
+            <Modal isVisible={isModalVisible} onClose={() => setModalVisible(false)}>
+                <Frame property1={state.property1} openartImage={openartImage} setting={setting} logout={logout} />
+            </Modal>
+        </div>
+      )} */}
+
+    {
+      isOpen && 
+      (
+      <div className="absolute right-0 top-12" >
+      <Frame openartImage={openartImage} setting={setting} logout={logout} />
+      </div>
+      )
+    }
+      
 
     </div>
 
