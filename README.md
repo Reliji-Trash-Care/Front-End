@@ -1,4 +1,4 @@
-# Reliji Trash Care Front-End
+# Reliji Trash Care
 
 ## prerequisite
 
