@@ -10,7 +10,7 @@ Sebelum memulai, pastikan Anda telah memenuhi persyaratan berikut:
 
 ### 1. Clone Repositori
 
-Pertama, clone repositori ke mesin lokal Anda menggunakan Git:
+Pertama, clone repositori ini menggunakan Git:
 
 ```bash
 git clone https://github.com/Reliji-Trash-Care/Front-End.git
