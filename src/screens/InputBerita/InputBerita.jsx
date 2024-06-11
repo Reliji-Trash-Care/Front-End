@@ -1,6 +1,6 @@
 import React from "react";
 import { NavbarUserFitur } from "../../components/NavbarUserFitur";
-import { SideBarWrapper } from "../../components/SideBarWrapper";
+import SideBarAdmin from "../../components/SideBarAdmin/SideBarAdmin";
 
 export const InputBerita = () => {
   return (
@@ -17,9 +17,9 @@ export const InputBerita = () => {
               </div>
               <div className="absolute w-[845px] h-[38px] top-[57px] left-[211px]">
                 <div className="absolute w-[142px] top-0 left-0 font-heading-8-bold font-[number:var(--heading-8-bold-font-weight)] text-black text-[length:var(--heading-8-bold-font-size)] tracking-[var(--heading-8-bold-letter-spacing)] leading-[var(--heading-8-bold-line-height)] [font-style:var(--heading-8-bold-font-style)]">
-                  Judul Berita
+                  Judul Berita 
                 </div>
-                <div className="absolute w-[715px] h-[28px] top-px left-[130px] bg-primary-1 rounded-[10px] border border-solid border-[#d9d9d9]" />
+                <input type="text" className="absolute w-[715px] h-[28px] top-px left-[130px] bg-primary-1 rounded-[10px] border border-solid border-[#d9d9d9] outline-none" />
               </div>
               <div className="absolute w-[81px] top-[228px] left-[211px] font-heading-8-bold font-[number:var(--heading-8-bold-font-weight)] text-black text-[length:var(--heading-8-bold-font-size)] tracking-[var(--heading-8-bold-letter-spacing)] leading-[var(--heading-8-bold-line-height)] [font-style:var(--heading-8-bold-font-style)]">
                 Isi Berita
@@ -51,10 +51,10 @@ export const InputBerita = () => {
                 <div className="absolute w-[142px] top-0 left-0 font-heading-8-bold font-[number:var(--heading-8-bold-font-weight)] text-black text-[length:var(--heading-8-bold-font-size)] tracking-[var(--heading-8-bold-letter-spacing)] leading-[var(--heading-8-bold-line-height)] [font-style:var(--heading-8-bold-font-style)]">
                   Nama Penulis
                 </div>
-                <div className="absolute w-[715px] h-[28px] top-px left-[130px] bg-primary-1 rounded-[10px] border border-solid border-[#d9d9d9]" />
+                <input type="text" className="absolute w-[715px] h-[28px] top-px left-[130px] bg-primary-1 rounded-[10px] border border-solid border-[#d9d9d9] outline-none" />
               </div>
               <div className="absolute w-[845px] h-[38px] top-[171px] left-[211px]">
-                <div className="absolute w-[715px] h-[28px] top-px left-[130px] bg-primary-1 rounded-[10px] border border-solid border-[#d9d9d9]" />
+                <input type="text" className="absolute w-[715px] h-[28px] top-px left-[130px] bg-primary-1 rounded-[10px] border border-solid border-[#d9d9d9] outline-none" />
                 <div className="absolute w-[142px] top-0 left-0 font-heading-8-bold font-[number:var(--heading-8-bold-font-weight)] text-black text-[length:var(--heading-8-bold-font-size)] tracking-[var(--heading-8-bold-letter-spacing)] leading-[var(--heading-8-bold-line-height)] [font-style:var(--heading-8-bold-font-style)]">
                   Nama Penebit
                 </div>
@@ -67,7 +67,7 @@ export const InputBerita = () => {
           profilOpenartImage="../../../static/img/openart-image-nfswrdqc-1711466557108-raw-2-3.png"
           profilText="Admin"
         />
-        <SideBarWrapper
+        <SideBarAdmin
           beritaPropertyDefaultClassName="!flex-[0_0_auto] !bg-secondary-1"
           chatText="Chat"
           className="!fixed !left-0 !top-0"

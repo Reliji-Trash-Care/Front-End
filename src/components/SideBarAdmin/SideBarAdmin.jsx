@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Berita } from "../Berita";
 import { Chat } from "../Chat";
 import { Deteksi } from "../Deteksi";
 import { LogoPlaceholder } from "../LogoPlaceholder";
 import { Setelan } from "../Setelan";
-import { SideBar } from "../SideBar";
 import { Tagihan } from "../Tagihan";
 import {JadwalAdmin} from "../JadwalAdmin/JadwalAdmin";
+import SideBarA from "../SideBarA/SideBarA";
+import BeritaAdmin from "../BeritaAdmin/BeritaAdmin";
 
 export const SideBarAdmin = ({
   className,
@@ -31,14 +31,13 @@ export const SideBarAdmin = ({
         group={logoPlaceholderGroup}
         groupClassName="!h-[25.47px] !w-[25.54px]"
       />
-      <SideBar
+      <SideBarA
         className={sideBarPropertyDefaultClassName}
         divClassName={sideBarDivClassName}
         home="../../../static/img/home-2.svg"
         property1="default"
-        onClick={() => navigateTo("/home")} // navigasi ke halaman home
       />
-      <Berita
+      <BeritaAdmin
         className="!flex-[0_0_auto]"
         divClassName="!text-primary-2"
         paper="../../../static/img/paper-2.svg"
