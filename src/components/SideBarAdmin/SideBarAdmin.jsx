@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { Berita } from "../Berita";
 import { Chat } from "../Chat";
 import { Deteksi } from "../Deteksi";
-import { Jadwal } from "../Jadwal";
 import { LogoPlaceholder } from "../LogoPlaceholder";
 import { Setelan } from "../Setelan";
 import { SideBar } from "../SideBar";
 import { Tagihan } from "../Tagihan";
+import {JadwalAdmin} from "../JadwalAdmin/JadwalAdmin";
 
 export const SideBarAdmin = ({
   className,
@@ -45,12 +45,11 @@ export const SideBarAdmin = ({
         property1="default"
         onClick={() => navigateTo("/beritauser")} // navigasi ke halaman beritauser
       />
-      <Jadwal
+      <JadwalAdmin
         calendar="../../../static/img/calendar-4.svg"
         className="!flex-[0_0_auto]"
         divClassName="!text-primary-2"
         property1="default"
-        onClick={() => navigateTo("/jadwalsampahadmin")} // navigasi ke halaman jadwalsampahadmin
       />
       <Tagihan
         className="!flex-[0_0_auto]"

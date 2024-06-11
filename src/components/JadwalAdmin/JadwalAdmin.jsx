@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
 
-export const Jadwal = ({ property1, className, calendar = "/img/calendar-1.svg", divClassName }) => {
+export const JadwalAdmin = ({ property1, className, calendar = "/img/calendar-1.svg", divClassName }) => {
   const [state, dispatch] = useReducer(reducer, {
     property1: property1 || "default",
   });
@@ -23,7 +23,7 @@ export const Jadwal = ({ property1, className, calendar = "/img/calendar-1.svg",
       <div
         className={`font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative ${divClassName}`}
       >
-        <a href="/jadwalsampahuser" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-primary-2 font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative">Jadwal</a>
+        <a href="/detailinputjadwalsampah" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-primary-2 font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative">Input Jadwal</a>
       </div>
     </div>
   );
@@ -47,7 +47,9 @@ function reducer(state, action) {
   return state;
 }
 
-Jadwal.propTypes = {
+JadwalAdmin.propTypes = {
   property1: PropTypes.oneOf(["variant-2", "default"]),
   calendar: PropTypes.string,
 };
+
+export default JadwalAdmin;
