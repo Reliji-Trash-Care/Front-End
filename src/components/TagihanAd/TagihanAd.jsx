@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
 
-export const Tagihan = ({ property1, className, wallet = "/img/wallet-1.svg", divClassName }) => {
+export const TagihanAd = ({ property1, className, wallet = "/img/wallet-1.svg", divClassName }) => {
   const [state, dispatch] = useReducer(reducer, {
     property1: property1 || "default",
   });
@@ -23,7 +23,7 @@ export const Tagihan = ({ property1, className, wallet = "/img/wallet-1.svg", di
       <div
         className={`font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative ${divClassName}`}
       >
-      <a href="/tagihanpilih" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-primary-2 font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative">Tagihan Iuran</a>
+      <a href="/tagihanadmin" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-primary-2 font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative">Tagihan Iuran</a>
       </div>
     </div>
   );
@@ -47,7 +47,8 @@ function reducer(state, action) {
   return state;
 }
 
-Tagihan.propTypes = {
+TagihanAd.propTypes = {
   property1: PropTypes.oneOf(["variant-2", "default"]),
   wallet: PropTypes.string,
 };
+export default TagihanAd
