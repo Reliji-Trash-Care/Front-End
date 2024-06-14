@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
 
-export const Tagihan = ({ property1, className, wallet = "/img/wallet-1.svg", divClassName }) => {
+export const JadwalAdmin = ({ property1, className, calendar = "/img/calendar-1.svg", divClassName }) => {
   const [state, dispatch] = useReducer(reducer, {
     property1: property1 || "default",
   });
@@ -19,11 +19,11 @@ export const Tagihan = ({ property1, className, wallet = "/img/wallet-1.svg", di
         dispatch("mouse_enter");
       }}
     >
-      <img className="w-[24px] h-[24px] relative" alt="Wallet" src={wallet} />
+      <img className="w-[24px] h-[24px] relative" alt="Calendar" src={calendar} />
       <div
         className={`font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-black font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative ${divClassName}`}
       >
-      <a href="/tagihanpilih" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-primary-2 font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative">Tagihan Iuran</a>
+        <a href="/detailinputjadwalsampah" className="font-body-1-regular w-fit tracking-[var(--body-1-regular-letter-spacing)] [font-style:var(--body-1-regular-font-style)] text-[length:var(--body-1-regular-font-size)] text-primary-2 font-[number:var(--body-1-regular-font-weight)] text-center whitespace-nowrap leading-[var(--body-1-regular-line-height)] relative">Input Jadwal</a>
       </div>
     </div>
   );
@@ -47,7 +47,9 @@ function reducer(state, action) {
   return state;
 }
 
-Tagihan.propTypes = {
+JadwalAdmin.propTypes = {
   property1: PropTypes.oneOf(["variant-2", "default"]),
-  wallet: PropTypes.string,
+  calendar: PropTypes.string,
 };
+
+export default JadwalAdmin;
