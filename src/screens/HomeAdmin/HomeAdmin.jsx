@@ -3,7 +3,8 @@ import { FiturDeteksi } from "../../components/FiturDeteksi";
 import { FiturJadwalSampah } from "../../components/FiturJadwalSampah";
 import { FiturTagihanIuran } from "../../components/FiturTagihanIuran";
 import { NavbarUserFitur } from "../../components/NavbarUserFitur";
-import { SideBarAdmin }from "../../components/SideBarAdmin/SideBarAdmin";
+import SideBarAdmin from "../../components/SideBarAdmin/SideBarAdmin";
+import { SideBarWrapper } from "../../components/SideBarWrapper";
 import { SubJudulFix } from "../../components/SubJudulFix";
 
 export const HomeAdmin = () => {

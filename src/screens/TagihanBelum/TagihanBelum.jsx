@@ -5,12 +5,6 @@ import { NavbarUserFitur } from "../../components/NavbarUserFitur";
 import { SideBarWrapper } from "../../components/SideBarWrapper";
 
 export const TagihanBelum = () => {
-
-  
-    const navigateTo = (path) => {
-      window.location.href = path;
-    }
-
   return (
     <div className="bg-white flex flex-row justify-center w-full">
       <div className="bg-primary-1 overflow-hidden w-[1440px] h-[772px] relative">
@@ -101,15 +95,12 @@ export const TagihanBelum = () => {
             divClassName="!text-tersier-2"
             property1="default"
             text="Belum Bayar"
-            
           />
-          
-          <MenuItem 
-            className="!cursor-pointer !px-0 !py-[10px] !absolute !left-[428px] !top-[10px]"
+          <MenuItem
+            className="!px-0 !py-[10px] !absolute !left-[428px] !top-[10px]"
             divClassName="!text-tersier-2"
             property1="default"
             text="Status Pembayaran"
-            onNavigate={() => navigateTo('/tagihanpilih')}
           />
           <MenuItem
             className="!absolute !left-[785px] !top-[10px]"
