@@ -50,7 +50,7 @@ export const SideBarAdmin = ({
         className="!flex-[0_0_auto]"
         divClassName="!text-primary-2"
         property1="default"
-        onClick={() => navigateTo("/jadwalsampahadmin")} // navigasi ke halaman jadwalsampahadmin
+       // onClick={() => navigateTo("/jadwalsampahadmin")} // navigasi ke halaman jadwalsampahadmin
       />
       <Tagihan
         className="!flex-[0_0_auto]"
