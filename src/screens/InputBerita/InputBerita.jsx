@@ -28,23 +28,12 @@ export const InputBerita = () => {
                 Gambar
               </div>
               <div className="absolute w-[715px] h-[38px] top-[646px] left-[341px] bg-[#ffffffcc] rounded-[10px] border border-solid border-[#d9d9d9]">
-                <div className="absolute w-[90px] h-[22px] top-[7px] left-[12px] bg-[#d9d9d9b2] border border-solid border-[#818181]">
-                  <div className="absolute w-[80px] top-[2px] left-[4px] font-caption-1-regular font-[number:var(--caption-1-regular-font-weight)] text-black text-[length:var(--caption-1-regular-font-size)] text-center tracking-[var(--caption-1-regular-letter-spacing)] leading-[var(--caption-1-regular-line-height)] whitespace-nowrap [font-style:var(--caption-1-regular-font-style)]">
-                    Choose File
-                  </div>
-                </div>
-                <div className="absolute w-[145px] top-[9px] left-[109px] font-caption-1-regular font-[number:var(--caption-1-regular-font-weight)] text-[#505050] text-[length:var(--caption-1-regular-font-size)] tracking-[var(--caption-1-regular-letter-spacing)] leading-[var(--caption-1-regular-line-height)] whitespace-nowrap [font-style:var(--caption-1-regular-font-style)]">
-                  No file Choosen
-                </div>
+                <input id="myfile" type="file" className="absolute w-[200px] top-[9px]"/>
               </div>
-              <div className="absolute w-[715px] h-[377px] top-[229px] left-[341px] bg-primary-1 rounded-[10px] border border-solid border-variable-collection-7b7b7b" />
+              <input type="text" className="absolute w-[715px] h-[377px] top-[229px] left-[341px] bg-primary-1 rounded-[10px] border border-solid border-variable-collection-7b7b7b" />
               <div className="absolute w-[126px] h-[51px] top-[713px] left-[955px]">
                 <div className="relative w-[124px] h-[51px]">
-                  <div className="absolute w-[98px] h-[51px] top-0 left-0 bg-primary-2 rounded-[10px]" />
-                  <div className="absolute w-[107px] top-[14px] left-[17px] font-body-1-bold font-[number:var(--body-1-bold-font-weight)] text-white text-[length:var(--body-1-bold-font-size)] tracking-[var(--body-1-bold-letter-spacing)] leading-[var(--body-1-bold-line-height)] [font-style:var(--body-1-bold-font-style)]">
-                    {" "}
-                    Selesai
-                  </div>
+                  <input type="submit" className="absolute w-[98px] h-[45px] top-0 left-0 bg-primary-2 rounded-[10px] text-green-50" value="Submit" />
                 </div>
               </div>
               <div className="absolute w-[845px] h-[38px] top-[114px] left-[211px]">
