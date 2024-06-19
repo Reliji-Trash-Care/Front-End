@@ -10,6 +10,9 @@ import SideBarA from "../SideBarA/SideBarA";
 import BeritaAdmin from "../BeritaAdmin/BeritaAdmin";
 import DeteksiAdmin from "../DeteksiAdmin/DeteksiAdmin";
 import TagihanAd from "../TagihanAd/TagihanAd";
+import { ChatAdmin } from "../ChatAdmin/ChatAdmin";
+import { SetelanAdmin } from "../SetelanAdmin/SetelanAdmin";
+
 
 export const SideBarAdmin = ({
   className,
@@ -58,7 +61,7 @@ export const SideBarAdmin = ({
         wallet="../../../static/img/wallet-2.svg"
         onClick={() => navigateTo("/tagihanadmin")} // navigasi ke halaman tagihanadmin
       />
-      <Chat
+      <ChatAdmin
         chat="../../../static/img/chat-2.svg"
         className="!flex-[0_0_auto]"
         divClassName="!text-primary-2"
@@ -71,7 +74,7 @@ export const SideBarAdmin = ({
         property1="default"
         onClick={() => navigateTo("/deteksiadmin")} // navigasi ke halaman deteksiadmin
       />
-      <Setelan
+      <SetelanAdmin
         className="!flex-[0_0_auto]"
         property1="default"
         setting="../../../static/img/setting-2.svg"
